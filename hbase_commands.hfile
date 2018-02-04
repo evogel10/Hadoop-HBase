@@ -1,0 +1,14 @@
+# Create table and column families
+create 'User', {NAME=>'creds'}, {NAME=>'prefs'}, {NAME=>'lastlogin'}
+
+# Populate table with sample data records
+put 'User', 'Eric-001', 'creds:email', 'eric@gmail.com'
+put 'User', 'Eric-001', 'creds:password', 'ericspassword'
+put 'User', 'Eric-001', 'prefs:status', 'single'
+put 'User', 'Eric-001', 'prefs:date_of_birth', '1990/03/10'
+put 'User', 'Eric-001', 'prefs:security_question', 'What was your High School Mascot?'
+put 'User', 'Eric-001', 'prefs:security_answer', 'Bulldog'
+put 'User', 'Eric-001', 'lastlogin:ip', '216.3.128.12'
+put 'User', 'Eric-001', 'lastlogin:date', '2017/11/20'
+put 'User', 'Eric-001', 'lastlogin:time', '08:32:40'
+put 'User', 'Eric-001', 'lastlogin:success', 'yes'
